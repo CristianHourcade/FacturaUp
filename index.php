@@ -1,11 +1,10 @@
 <?php 
-// <<<<<<< HEAD
+
  session_start();
 
-// include 'mp/pagamento2.php';
-// =======
+
 // //include 'mp/pagamento2.php';
-// >>>>>>> 47038cae23d1a10571e6bdfb0b10bfa6b436aaac
+
 ?>
 <!DOCTYPE html>
 

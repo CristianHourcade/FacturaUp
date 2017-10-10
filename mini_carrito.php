@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if(empty($_SESSION["cl_email"])){
+	header("location:index.php");
+}
+	include 'mp/pagamento2.php';
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -16,6 +25,8 @@
 		<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>
+		<script type="text/javascript" src="jslogin/functions.js"></script>
 		<script type="text/javascript" src="js/funciones.js"></script>
 	</head>
 	<body>
@@ -37,6 +48,10 @@
 						<li class="nav-item"><a class="nav-link" href="#">¿Cómo Funciona?</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Planes</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+						<button class="btn btn-primary btn-nuevo-clientes ml-3" type="button">Registrarse</button>
+                  <button class="btn btn-primary btn-log-clientes ml-3" type="button">Ingresar</button>
+                  <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user fa-fw"></i><?php echo @$_SESSION["cl_email"]?></a></li>
+                  <li class="nav-item"><a class="nav-link btn-salir" href="#">Salir</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -45,7 +60,7 @@
 			<h2 class="col-md-12 text-center padding-unhiding">Descargue su versión de <em>Factura Up </em> </h2>
 			<article class="col-md-6 bg-danger">
 				<img src="images/demo_img.png" class="img-fuid">
-				<button class="btn btn-lg">Descargar</button>
+				<button type="button" class="btn btn-outline-success">¡Descargar Ahora!</button>
 				<h3>Versión demo</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -56,8 +71,8 @@
 			</article>
 			<article class="col-md-6 bg-success">
 				<img src="images/full_img.png" class="img-fuid">
-				<button class="btn btn-lg">Descargar</button>
-				<h3>Versión demo</h3>
+<a href="<?php echo $preference['response']['sandbox_init_point']?>" name="MP-Checkout" class="btn btn-primary" mp-mode="modal" onreturn="execute_my_onreturn">Comprar Ahora!</a>
+				<h3>Versión paga</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

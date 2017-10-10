@@ -121,7 +121,7 @@ if($("#nombre").val()==""){
                             contrasena:$("#contrasena").val()
                         },
                         success:function(result){
-                 
+                            alert("¡Registro exitoso!");
                             $("#modal-adm").modal("hide");
                             $("#modal-adm").html("");
                         }
