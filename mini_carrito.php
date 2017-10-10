@@ -60,7 +60,7 @@ if(empty($_SESSION["cl_email"])){
 			<h2 class="col-md-12 text-center padding-unhiding">Descargue su versión de <em>Factura Up </em> </h2>
 			<article class="col-md-6 bg-danger">
 				<img src="images/demo_img.png" class="img-fuid">
-				<button type="button" class="btn btn-outline-success">¡Descargar Ahora!</button>
+				<button type="button" class="btn btn-outline-success demo-btn">¡Descargar Ahora!</button>
 				<h3>Versión demo</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

@@ -19,6 +19,18 @@ $(document).ready(function() {
 			}
 		});
 	});
+$(".demo-btn").on("click",function(){
+
+	$.ajax({
+		url:"admin2032/scripts/clientes-email.php",
+		success:function(result){
+			alert("Se ha enviado un correo con el link de descarga a tu E-mail registrado. Si tiene problemas para descargar contactese con ayuda al cliente");
+			alert(result);
+		}
+	});
+});
+
+
 });
 // var scroll_pos = 0;
 // $(document).scroll(function() { 

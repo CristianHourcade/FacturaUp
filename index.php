@@ -2,9 +2,6 @@
 
  session_start();
 
-
-// //include 'mp/pagamento2.php';
-
 ?>
 <!DOCTYPE html>
 
