@@ -42,9 +42,10 @@
 			</nav>
 		</div>
 		<div class="row secc-cart">
-			<h2 class="col-md-12 text-center padding-unhiding">Descargue su versión de <em>Factura Up </em> </h2>
-				<article class="col-md-6 bg-danger">
-					<img src="images/demo_img.png" class="img-fuid">l
+			<h2 class="col-md-12 text-center padding-unhiding pb-4">Descargue su versión de <em><b>Factura Up </b></em> </h2>
+				<article class="col-md-6">
+					<img src="images/demo_img.png" class="img-fuid d-block mx-auto">
+					<button type="button" class="btn btn-md btn-info d-block mx-auto my-4 descarga-demo"><a href="#">Descargar</a></button>
 					<h3>Versión demo</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -53,10 +54,10 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</article>
-				<article class="col-md-6 bg-success">
-					<img src="images/full_img.png" class="img-fuid">
-					<button class="btn btn-lg">Descargar</button>
-					<h3>Versión demo</h3>
+				<article class="col-md-6 ">
+					<img src="images/full_img.png" class="img-fuid d-block mx-auto">
+					<button class="btn btn-md btn-info d-block mx-auto my-4 descarga-full">Descargar</button>
+					<h3>Versión completa</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
