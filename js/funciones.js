@@ -4,7 +4,7 @@ $(document).ready(function() {
 			url:"scripts/user-online.php",
 			success:function(result){
 				if(result=="error"){
-					alert("Usted debe registrarse o iniciar secion para poder descargar la demo.");
+					alert("Usted debe registrarse o iniciar secion para poder descargar la demo o comprar la version premium de FacturaUp.");
 					$.ajax({
           			 	 url:"modal/modal-nuevo-clientes.php",
            				 success:function(result){

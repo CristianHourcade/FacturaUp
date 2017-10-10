@@ -189,7 +189,7 @@
                                     <span>$</span>
                                     <span>4.00 <sup>00</sup></span>
                                  </p>
-                                 <div class="text-center"><a href="#" class="btn btn-primary">Comprar</a></div>
+                                 <div class="text-center"><a href="#" class="btn btn-primary demo-button">Comprar</a></div>
                               </div>
                            </div>
                            <div class="col-md-4 destacado bg-light">
@@ -200,9 +200,8 @@
                                     <span>$</span>
                                     <span>4.00 <sup>00</sup></span>
                                  </p>
-                                 <div class="text-center">
-                                 <a href="<?php echo $preference['response']['sandbox_init_point']?>" name="MP-Checkout" class="btn btn-primary" mp-mode="modal" onreturn="execute_my_onreturn">Comprar</a>
-                                 </div>
+                                                                  <div class="text-center"><a href="#" class="btn btn-primary demo-button">Comprar</a></div>
+
                               </div>
                            </div>
                            <div class="col-md-4 my-auto price-col">
@@ -212,8 +211,8 @@
                                     <span>$</span>
                                     <span>4.00 <sup>00</sup></span>
                                  </p>
-                                 <div class="text-center"><a href="#" class="btn btn-primary">Comprar</a></div>
-                              </div>
+                                                                 <div class="text-center"><a href="#" class="btn btn-primary demo-button">Comprar</a></div>
+
                            </div>
                         </div>
                         </div> <!-- end row -->
