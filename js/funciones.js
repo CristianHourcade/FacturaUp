@@ -1,3 +1,6 @@
+var f = new Date();
+
+
 $(document).ready(function() {
 	$(".demo-button").on("click",function(){
 		$.ajax({
@@ -26,6 +29,16 @@ $(".demo-btn").on("click",function(){
 		success:function(result){
 			alert("Se ha enviado un correo con el link de descarga a tu E-mail registrado. Si tiene problemas para descargar contactese con ayuda al cliente");
 			alert(result);
+		}
+	});
+	$.ajax({
+        type:"POST",
+		url:"admin2032/scripts/demo-store.php",
+        data:{
+            fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
+        },
+		success:function(result){
+			alert(result)
 		}
 	});
 });

@@ -61,7 +61,7 @@ if(empty($_SESSION["cl_email"])){
 			<h2 class="col-md-12 text-center padding-unhiding pb-4">Descargue su versión de <em><b>Factura Up </b></em> </h2>
 				<article class="col-md-6">
 					<img src="images/demo_img.png" class="img-fuid d-block mx-auto">
-					<button type="button" class="btn btn-md btn-info d-block mx-auto my-4 descarga-demo demo-btn"><a href="#">Descargar</a></button>
+					<a href="#"  class="btn btn-md btn-info d-block mx-auto my-4 descarga-demo demo-btn">Descargar</a>
 					<h3>Versión demo</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -73,7 +73,7 @@ if(empty($_SESSION["cl_email"])){
 			
 				<article class="col-md-6 ">
 					<img src="images/full_img.png" class="img-fuid d-block mx-auto">
-					<a href="<?php echo $preference['response']['sandbox_init_point']?>" name="MP-Checkout" class="btn btn-primary d-block mx-auto my-4" mp-mode="modal" onreturn="execute_my_onreturn">Comprar Ahora!</a><h3>Versión completa</h3>
+				<a href="<?php echo $preference['response']['sandbox_init_point']?>" name="MP-Checkout" class="btn btn-primary d-block mx-auto my-4" mp-mode="modal" onreturn="execute_my_onreturn">Comprar Ahora!</a>					<h3>Versión completa</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
